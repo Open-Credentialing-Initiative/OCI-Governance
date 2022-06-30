@@ -13,7 +13,7 @@
   <meta http-equiv=" Content-Type" content="text/html;charset=utf-8" />
 
   <title>OCI Governance</title>
-  <h2 id="subtitle">v1.0.0</h2>
+  <h2 id="subtitle">v2.0.0</h2>
   
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
   <script type="text/javascript" class="remove">
@@ -40,6 +40,12 @@
           url: 'https://www.linkedin.com/in/chriswirrig/',
           company: 'Spherity',
           companyURL: 'https://spherity.com/',
+        },
+        {
+          name: 'Elizabeth Waldorf',
+          url: 'https://www.linkedin.com/in/elizabethwaldorf/',
+          company: 'TraceLink',
+          companyURL: 'https://www.tracelink.com/',
         },
       ],
       github: "https://open-credentialing-initiative.github.io/OCI-Governance/",
@@ -80,128 +86,195 @@
 <body>
   <p class="copyright">Copyright © 2022 Named editors. Contributors to the Open Credentialing Initiative.</p>
   <section>
-    <h2>Status of this Document</h2>
-    <p>
-      This section describes the status of this document at the
-      time of its publication. Other documents may supersede this
-      document.
-    </p>
-    <p>This is a public OCI Working Draft for review by OCI
-      Members and other interested parties. This section describes the
-      status of this document at the time of its publication. It is a draft
-      document and may be updated, replaced, or obsoleted by other documents
-      at any time. It is inappropriate to use OCI Working Drafts as
-      reference material or to cite as other than "work in progress". A
-      list of current OCI Recommendations and other technical documents can
-      be found in <a href="https://github.com/Open-Credentialing-Initiative">OCI's GitHub repositories</a>.
-    </p>
+      <h2>Status of this Document</h2>
+      <p>
+        This section describes the status of this document at the
+        time of its publication. Other documents may supersede this
+        document.
+      </p>
+      <p>This is a public OCI Working Draft for review by OCI
+        Members and other interested parties. This section describes the
+        status of this document at the time of its publication. It is a draft
+        document and may be updated, replaced, or obsoleted by other documents
+        at any time. It is inappropriate to use OCI Working Drafts as
+        reference material or to cite as other than "work in progress". A
+        list of current OCI Recommendations and other technical documents can
+        be found in <a href="https://github.com/Open-Credentialing-Initiative">OCI's GitHub repositories</a>.
+      </p>
   </section>
   <!-- Abstract -->
   <section id="abstract">
-    <p>
-      This document lays out the terms and conditions of OCI's governance.
-    </p>
+      <p>
+        This document lays out the terms and conditions of OCI's governance.
+      </p>
   </section>
-  <!-- Content -->
-    <section>
-    <h2>Purpose</h2>
-    <p>OCI was started as an Incubator of the Center for Supply Chain Studies. This document represents the original Charter.</p>
+    <!-- Content -->
+  <section>
+      <h2>Purpose</h2>
+          <p>The Open Credentialing Initivative (OCI) was started as an Incubator of the Center for Supply Chain Studies. 
+            This document is based on the original Charter with necessary additions relating to governance details not 
+            previously recorded.<br><br>
+            OCI is an open source initiative. All artifacts created by OCI are governed under the 
+            <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0 license</a> (collaborative, open source 
+            software development).<br> <br>
+            As OCI artifacts are used by US pharmaceutical trading partners to comply with the Drug Supply Chain Security Act 
+            (DSCSA), other laws, regulations and industry consensus agreements and international standards, it is imperative 
+            that the OCI architecture design and maintenance is guided by industry participants (trading partners), regulators 
+            and stakeholders.<br> <br>
+            Hence, OCI encourages contributions from OCI member and non-member companies and individuals by following the 
+            processes described in this document. In particular, contributors should note the applicable license and required 
+            contributor assertions.</p>
   </section>  
-   <!-- Conformance -->
+  <!-- Conformance -->
   <section id="conformance">
-    <h2>General Terms and Abbreviations</h2>
-    <ul>
-      <li><dfn>Affiliate</dfn> means an entity that directly or indirectly controls, is controlled by, or is under common control of that Steering Member or Associate.</li>      
-      <li><dfn>Approval</dfn> or <dfn>Approved</dfn> means a decision made pursuant to OCI's Decision-making Process.</li>
-      <li><dfn>Approved Deliverable</dfn> means the final version and contents of any Draft Deliverable approved as an Approved Deliverable as set forth in OCI's Deliverable Development Process.</li>
-      <li><dfn>Associate</dfn> means a party, and that party’s Affiliates, that has executed this Incubator Charter at the Associate level, unless that Associate has withdrawn or been terminated from the Incubator or has changed membership level.</li>
-      <li><dfn>Contribution</dfn> means any original work of authorship, including any modifications or additions to an existing work, that the Steering Member or Associate intentionally submit for inclusion in the Draft Deliverable or Approved Deliverable, which is included in the Draft Deliverable or Approved Deliverable. For the purposes of this definition, “submit” means any form of electronic, oral, or written communication for the purpose of discussing and improving the Draft Deliverable or Approved Deliverable but excluding communication that the Steering Member or Associate conspicuously designate in writing as not a contribution.</li>
-      <li><dfn>Contributor</dfn> means a party, and that party’s Affiliates, that has executed this Incubator Charter at the Contributor level, unless that Associate has withdrawn or been terminated from the Incubator or has changed membership level.</li>
-      <li><dfn>Control</dfn> means direct or indirect control of more than 50% of the voting stock or decision-making authority.</li>
-      <li><dfn>Draft Deliverable</dfn> means all versions of the material (except an Approved Deliverable) developed by a Working Group for the purpose of creating, commenting on, revising, updating, modifying, or adding to any document that is to be considered for inclusion in the Approved Deliverable.</li>
-      <li><dfn>Join</dfn> or <dfn>Joined</dfn> means that a party has entered into the Membership Agreement for this Incubator and that has indicated either in the Membership Agreement or subsequently in writing to the Facilitator that they have joined a Working Group and agree to be bound by the terms of that Working Group’s Charter.</li>
-      <li><dfn>Incubator</dfn> means the name of the Incubator set forth in Section 1 that is established under this Incubator Charter as a Center for Supply Chain Studies Incubator.</li>
-      <li><dfn>Incubator Agreement</dfn> means the agreement that establishes the Incubator under Center for Supply Chain Studies that this Incubator operates under.</li>
-      <li><dfn>Scope</dfn> means a description of the deliverables that a given Working Group will develop as set forth in that Working Group’s Charter.</li>
-      <li><dfn>Steering Member</dfn> means a party, and that party’s Affiliates, that has executed the Membership Agreement for this Incubator either 1) as a Steering Member, or 2) who has joined the Steering Committee in response to the Steering Committee’s nomination, as applicable per the Steering Committee composition election in the Membership Agreement, unless that Steering Member has withdrawn or been terminated from the Incubator or has changed membership level.</li>
-      <li><dfn>Supermajority Vote</dfn> means an affirmative vote of no less than 3/4 of Steering Members or Working Group Participants, as applicable, that have attended/participated in at least 50% of the last 4 meetings of the group conducting the vote, where each Steering Member or Working Group Participant will receive only 1 vote regardless of how many individuals from that Steering Member participate. To ensure the group is capable of making decisions, the voting requirement for attendance/participation of at least 50% of the last 4 meetings shall be waived if there have not yet been 4 meetings.</li>
-      <li><dfn>Working Group</dfn> means a working group established under this Incubator via a Working Group Charter to develop Deliverables within the Scope. Each Working Group must have a Scope.</li>
-      <li><dfn>Working Group Participant</dfn> means a Steering Member, Associate, or Contributor who has Joined a Working Group.</li>
-    </ul>
-    </section>
-  <!-- Charter Terms -->
+      <h2>General Terms and Abbreviations</h2>
+          <ul>
+            <li><dfn>Deliverable</dfn> means all versions of the material developed by a Working Group for the purpose of creating, commenting on, revising, updating, modifying, or adding to any document that is to be considered for inclusion in OCI publications or releases.</li>
+            <li><dfn>DSCSA</dfn> (Drug Supply Chain Security Act) refers to an act of the U.S. Congress that mandates an electronic, interoperable system to identify and trace certain prescription drugs as they are distributed in the United States. The DSCSA imposes a number of current and emerging requirements on pharmaceutical supply chain stakeholders as part of a mandate to protect consumers from exposure to drugs that may be counterfeit, stolen, contaminated, or otherwise harmful.</li>       
+            <li><dfn>Incubator</dfn> means the name of the Incubator that was established under the original Incubator Charter as a Center for Supply Chain Studies Incubator. Here this is the Open Credentialing Initiative (OCI).</li>
+            <li><dfn>Incubator Charter</dfn> means the agreement that establishes the Incubator under Center for Supply Chain Studies that this Incubator operates under.</li>
+            <li><dfn>Industry Alignment Session</dfn> refers to an open meeting intended to involve OCI members as well as representatives from organizations that are not directly associated with OCI but who have an interest in the OCI architecture and processes. Participants may be pharmaceutical industry business experts, compliance specialists, technical experts, or other relevant pharmaceutical industry professionals.</li>
+            <li><dfn>OCI Member</dfn> means a party, and that party’s Affiliates, that has executed the OCI Membership Agreement at any membership level offered, unless that OCI member has withdrawn or been terminated from the Incubator. 
+                      An Affiliate is an entity that directly or indirectly controls, is controlled by, or is under common control of an entity. 
+                      Control means direct or indirect control of more than 50% of the voting stock or decision-making authority.</li>
+            <li><dfn>Supermajority Vote</dfn> means an affirmative vote of no less than 3/4 of Steering Members or Working Group Participants, as applicable, that have attended/participated in at least 50% of the last 4 meetings of the group conducting the vote, where each Steering Member or Working Group Participant will receive only 1 vote regardless of how many individuals from that Steering Member participate. To ensure the group is capable of making decisions, the voting requirement for attendance/participation of at least 50% of the last 4 meetings shall be waived if there have not yet been 4 meetings.</li>
+            <li><dfn>Working Group</dfn> means a working group established under this Incubator to develop Deliverables within the Scope, i.e. a description of the deliverables that a given Working Group will develop. Each Working Group must have a Scope.</li>
+            <li><dfn>Working Group Participant</dfn> means an OCI Member who has joined a Working Group by indicating either in the Membership Agreement or subsequently in writing to the Facilitator that they have joined a Working Group.</li>
+          </ul>  
+              <h3>What is a contribution?</h3>
+                  <p>A <dfn>Contribution</dfn> comprises any original work of authorship, including any modifications or additions to an existing work, that is intentionally submitted for inclusion in OCI <a>Deliverables</a>. For the purposes of this definition, “submit” means any form of oral or written communication for the purpose of discussing and improving the <a>Deliverable</a> but excluding communication that is conspicuously designated in writing as not a Contribution.<br>
+                      A Contribution to OCI encompasses the following:</p>
+                  <ul>
+                    <li>written submission of ideas, suggestions, drawings, or other content submitted via <a href="https://github.com/Open-Credentialing-Initiative">OCI GitHub</a></li>
+                    <li>written submission of ideas, suggestions, drawings, or other content submitted via the <a href="https://www.oc-i.org/contact">OCI website</a></li>
+                    <li>verbal submission of ideas, suggestions, or other content made in OCI meetings or conversations with OCI members and other interested parties at which the <a>Contributor</a> has been made aware of OCI's contribution process</li>
+                  </ul>
+                  <p>A <dfn>Contributor</dfn> may be an <a>OCI Member</a>, a <a>DSCSA</a>-related organization, a technical standards body, a public organization or person, or any other interested party.</p>
+  </section>
+  <!-- Charter History -->
   <section>
-    <h2>Incubators within the Center for Supply Chain Studies</h2>
-    <p> The Center for Supply Chain Studies hosts and facilitates industry-wide Studies as a way to openly exchange ideas, share expertise and explore the complex regulatory and operational operations issues facing today’s supply chain. Additionally, the Center offers Incubator support with a structure similar to its industry-wide Studies to groups of collaborating companies that are in the early process of implementing industry benefiting processes, technologies, and initiatives.  The purpose of an Incubator project is to provide enough support to allow the Incubator Members to launch an initiative into a more formal structure or find homes for the initiative’s artifacts, activities, and discussions.</p> 
-    <p>Incubator sponsors and participants are able to remove administrative burdens by leveraging the Center’s resources – freeing them to pursue the explorative goals that brought them together in the first place. All industry-wide Studies, Private Studies and Incubators are conducted in a manner that adheres to current anti-trust laws and provide an educational environment for the benefit of the industry at large.</p>
+      <h2>Incubators within the Center for Supply Chain Studies</h2>
+          <p> The Center for Supply Chain Studies hosts and facilitates industry-wide Studies as a way to openly exchange ideas, share expertise and explore the complex regulatory and operational operations issues facing today’s supply chain. Additionally, the Center offers Incubator support with a structure similar to its industry-wide Studies to groups of collaborating companies that are in the early process of implementing industry benefiting processes, technologies, and initiatives. The purpose of an Incubator project is to provide enough support to allow the Incubator Members to launch an initiative into a more formal structure or find homes for the initiative’s artifacts, activities, and discussions.</p> 
+          <p>Incubator sponsors and participants are able to remove administrative burdens by leveraging the Center’s resources – freeing them to pursue the explorative goals that brought them together in the first place. All industry-wide Studies, Private Studies and Incubators are conducted in a manner that adheres to current anti-trust laws and provide an educational environment for the benefit of the industry at large.</p>
+            <h3>Incubator Charter</h3>
+                <p>The original “<a>Incubator Charter</a>” established the intial terms under which this project operates as an Incubator of the Center for Supply Chain Studies (the “Center”). The Center provides resources for the duration of the project as well as confirming that Incubator Participants conduct their activities in accordance with the Center’s corporate purpose and policies, such as its non-profit status, accounting, and regulatory guidelines. Incubators are otherwise independent. The Incubator Charter was entered into and made effective as of March 1, 2021 (“Effective Date”).</p>
+  <!-- T&C -->
+  <section>
+      <h2>Membership Agreement</h2>
+          <p>The Membership Agreement is a separate stand-alone document that is provided by OCI on the <a href="https://www.oc-i.org/">OCI website</a> or on request. Organizations join OCI as official members upon signing the Membership Agreement.</p>
+          <p></p>
+              <h3>Membership Levels</h3>
+                  <p>Each OCI Member company must assign a Steering Member from the organization that will participate on the Steering Committee. All other individuals from a Member company can participate at other membership levels.</p>
+                    <ul>
+                      <li>Steering Member. Steering Members may participate in each <a>Working Group</a> and, unless waived per the Membership Agreement, the Steering Committee.</li>
+                      <li>General Member. General Members may participate in each <a>Working Group</a>, but do not participate on the Steering Committee.</li>
+                      <li>Associate. Associates may participate in each <a>Working Group</a>, but do not participate on the Steering Committee and are not eligible to participate in decisions that require a <a>Supermajority Vote</a>. </li>
+                          <!--This was "Contributor" in the original Charter. There is now a conflict in meaning with the introduction of the Contribution process. Hence, the label should be changed at Membership lebel.  -->
+                    </ul> 
+              <h3>Representations, Warranties and Disclaimers</h3>
+                  <p>OCI Members and the Center represent and warrant that they are legally entitled to grant the rights and promises set forth in the Membership Agreement . IN ALL OTHER RESPECTS THE CONTRIBUTIONS ARE PROVIDED "AS IS." The entire risk as to implementing or otherwise using an OCI <a>Deliverable</a> is assumed by the implementer and user. Except as stated herein, OCI Members expressly disclaims any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the material. IN NO EVENT WILL THE CENTER, ANY STEERING MEMBER, ASSOCIATE, OR CONTRIBUTOR BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THIS AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER MEMBER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
   </section>
   <section>
-  <h2>Incubator Charter</h2>
-  <p>This “Incubator Charter” establishes the terms under which this project will operate as an Incubator of the Center for Supply Chain Studies (the “Center”). The Center provides resources for the duration of the project as well as confirming that Incubator Participants conduct their activities in accordance with the Center’s corporate purpose and policies, such as its non-profit status, accounting, and regulatory guidelines. Incubators are otherwise independent. This Incubator Charter and attached Membership Agreement is entered into and made effective as of March 1, 2021 (“Effective Date”), among the parties listed in Attachment 1 to the Membership Agreement and any third party that executes this Incubator Charter and Membership Agreement after the Effective Date.</p>
+    <h2>Organization</h2>
+          <ul>
+              <li>Steering Committee. The Steering Committee is the body that is responsible for governing the <a>Incubator</a>, identifying new Working Groups, tracking Working Group progress, ensuring Working Group meet their goals, etc.</li>
+              <!-- <li>Advisors to OCI. The Advisor Committee is made up of outside subject matter experts and is appointed by the Steering Committee for a period set by the Steering Committee. </li> -->
+              <li>Facilitator. The <a>Incubator</a> will have a Facilitator whose responsibilities are set forth in the Series Agreement and will include organizing meetings, organizing voting, and any other activities approved by the Steering Members. </li>
+              <!-- We should mention the Admin team here too. -->
+          </ul>
+  </section>
+  <section>
+    <h2>Decision-making</h2>
+        <ul>
+          <li>Consensus/Voting/Approval. The Steering Committee and each <a>Working Group</a> will endeavor to make all decisions by consensus. Where the Steering Committee or Working Group cannot reach consensus with respect to a particular decision, the Steering Committee or Working Group will make that decision by a <a>Supermajority Vote</a> of the Steering Members or <a>Working Group Participants</a>, as applicable.</li>
+          <li>Notifications and Electronic Voting. The Facilitator is responsible for issuing all notifications of meetings and votes of the Steering Members and each Working Group chair is responsible for issuing all notifications of meetings and votes of the Working Group for which it is the chair, in each case subject to the following minimum criteria:<br> 
+              (i) in-person meetings require at least 30 days prior written notice, <br>
+              (ii) teleconference meetings require at least 2 days prior written notice (this requirement only applies to the notification of the first meeting of automatically recurring teleconference meetings), <br>
+              (iii) electronic votes require no advance notice but must be made pursuant to a clear and unambiguous ballot with only “yes” and “no” options, and the voting must remain open for no less than 7 days. These notification requirements with respect to the <a>Incubator</a> or that particular Working Group may be overridden upon unanimous consent of all Steering Members or all applicable <a>Working Group Participants</a> that have attended and participated in at least 50% of the last 4 meetings of the <a>Incubator</a> or Particular <a>Working Group</a>.</li>
+        </ul>
+  </section>
+  <section>
+    <h2>Working Groups</h2>
+        <ul>
+          <li>Working Groups. The Incubator may have multiple Working Groups, and each Working Group will operate as set forth in this Section and any additional agreements made within the Working Group.</li>
+          <li>Working Group Chair. Each Working Group will designate at least one chair for that Working Group. A Working Group may select a new chair upon approval of the <a>Working Group Participants</a>.</li>
+          <li>Working Group Requirements. Each Working Group must be comprised of at least 2 <a>Working Group Participants</a>. No Working Group Participant will be permitted to participate in a Working Group without first joining the Working Group.</li>
+        </ul> 
+      </section>
+  <!-- Contribution & Appeal Process -->
+  <section>
+    <h2>Contributions</h2>
+      <p>Any <a>OCI Member</a> or external party makes <a>Contributions</a> to OCI in agreement with the Apache License, Version 2.0 (the “License”). All published OCI material is licensed under this License; OCI material may not be used except in compliance with the License. A copy of the License may be obtained at <a href="https://www.apache.org/licenses/LICENSE-2.0.html">apache.org</a>. Unless required by applicable law or agreed to in writing, OCI-published material distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
-  <h3>Incubator Initiation.</h3>
-  <p>The Incubator will become effective upon execution of a Membership Agreement for this Incubator by 2 Steering Members. New parties may join the Incubator upon Approval of the Steering Members.</p>
-  <h3>Membership Levels.</h3>
-  <p>Each Incubator Member company must assign a Steering Member from the organization that will participate on the Steering Committee.  All other Members from a Member company can participate as an Associate and Contributor.</p>
-    <ul>
-      <li>Steering Member. Steering Members may participate in each Working Group and, unless waived per the Membership Agreement, the Steering Committee.</li>
-  <li>Associate. Associates may participate in each Working Group, but do not participate on the Steering Committee.</li>
-  <li>Contributor. Contributors may participate in each Working Group, but do not participate on the Steering Committee and are not eligible to participate in decisions that require a Supermajority Vote. </li>
-    </ul>
-  <h3>Organization.</h3>
-    <ul>
-  <li>Steering Committee. The Steering Committee is the body that is responsible for governing the Incubator, identifying new Working Groups, tracking Working Group progress, ensuring Working Group meet their goals, etc.</li>
-  <li>Advisors to OCI.  The Advisor Committee is made up of outside subject matter experts and is appointed by the Steering Committee for a period set by the Steering Committee. </li>
-  <li>Facilitator. The Incubator will have a Facilitator whose responsibilities are set forth in the Series Agreement and will include organizing meetings, organizing voting, and any other activities Approved by the Steering Members. </li>
-    </ul>
-  <h3>Decision-making.</h3>
-    <ul>
-      <li>Consensus/Voting/Approval. The Steering Committee and each Working Group will endeavor to make all decisions by consensus. Where the Steering Committee or Working Group cannot reach consensus with respect to a particular decision, the Steering Committee or Working Group will make that decision by a Supermajority Vote of the Steering Members or Working Group Participants, as applicable.</li>
-      <li>Notifications and Electronic Voting. The Facilitator is responsible for issuing all notifications of meetings and votes of the Steering Members and each Working Group chair is responsible for issuing all notifications of meetings and votes of the Working Group for which it is the chair, in each case subject to the following minimum criteria: (i) in-person meetings require at least 30 days prior written notice, (ii) teleconference meetings require at least 2 days prior written notice (this requirement only applies to the notification of the first meeting of automatically recurring teleconference meetings), (iii) electronic votes require no advance notice but must be made pursuant to a clear and unambiguous ballot with only “yes” and “no” options, and the voting must remain open for no less than 7 days. These notification requirements with respect to the Incubator or that particular Working Group may be overridden upon unanimous consent of all Steering Members or all applicable Working Group Participants that have attended and participated in at least 50% of the last 4 meetings of the Incubator or Particular Working Group.</li>
-     </ul>
-  <h3>Working Groups.</h3>
-    <ul>
-      <li>Working Groups. The Incubator may have multiple Working Groups, and each Working Group will operate as set forth in this Section and its Working Group Charter.</li>
-      <li>Working Group Chair. Each Working Group will designate a chair for that Working Group. A Working Group may select a new chair upon Approval of the Working Group Participants.</li>
-      <li>Working Group Requirements. Each Working Group must be comprised of at least 2 Working Group Participants. No Working Group Participant will be permitted to participate in a Working Group without first Joining the Working Group.</li>
-    </ul>
-  <h3> Conditions for Contributions.</h3>
-  <p> A Steering Member, Associate, or Contributor may not make any Contribution unless that Steering Member, Associate or Contributor is the exclusive intellectual property owner of the Contribution or has sufficient intellectual property rights from the copyright owners to make the Contribution under the terms of this Incubator Charter and applicable Working Group Charter. The Steering Member, Associate, or Contributor must disclose the identities of all known copyright owners in theContribution. With regard to all intellectual property (including without limitation patents, copyrights, and trade secrets) owned by, or licensed to, a party prior to the date of this Incubator Charter, or created by a party during the term of this Incubator Charter, and to the extent such intellectual property is contributed, disclosed, or shared under this Incubator Charter or the Mutual Non-Disclosure Agreement, such party shall continue to own such intellectual property. Additionally, such party grants the recipients of such intellectual property a perpetual, royalty-free, irrevocable, worldwide license to use such intellectual property solely to develop, use, support and provide the business interaction network, acknowledging that it is the intent of the parties that the business interaction network and the underlying collaboration will be handled under a written agreement to be executed in the future.</p>
-  <h3>Deliverable Development Process.</h3>
-    <ul>
-      <li>Pre-Draft. Any Working Group Participant or Contributor may submit a proposed initial draft document as a candidate Draft Deliverable of that Working Group. The Working Group chair will designate each submission as a “Pre-Draft” document.</li>
-      <li>Draft. Each Pre-Draft document of a Working Group must first be Approved by the Working Group Participants of that Working Group to become a Draft Deliverable. Once the Working Group approves a document as a Draft Deliverable, the Draft Deliverable becomes the basis for all going forward work on that deliverable.</li>
-      <li>Working Group Approval. Once a Working Group believes it has achieved the objectives for its deliverable as described in the Scope, it will progress its Draft Deliverable to “Working Group Approved” status.</li>
-      <li>Final Approval. Upon a Draft Deliverable reaching Working Group Approved status, the Facilitator or his/her designee will present that Working Group Approved Draft Deliverable to all Steering Members for Approval. Upon Approval by the Steering Members, that Draft Deliverable will be designated an “Approved Deliverable.”</li>
-      <li>Publication and Submission. Upon the designation of a Draft Deliverable as an Approved Deliverable, the Facilitator will publish the Approved Deliverable in a manner agreed upon by the Working Group Participants (i.e., Incubator Participant only location, publicly available location, Incubator maintained website, Incubator member website, etc.), subject to the prior written consent of the Steering Member signing this Incubator Charter. The publication of an Approved Deliverable in a publicly accessible manner must include an appropriate reference to the Apache 2.0 Licenseterms under which the Approved Deliverable and/or source code is being made available under, as set forth in the applicable Working Group Charter.</li>
-      <li>Submissions to Standards Bodies. No Draft Deliverable or Approved Deliverable may be submitted to a standards development organization without Approval by the Steering Members, and subject to the prior written consent of the Steering Member signing this Incubator Charter. Upon Approval by the Steering Members, the Facilitator will coordinate the submission of the applicable Draft Deliverable or Approved Deliverable to a standards development organization with Center for Supply Chain Studies. Working Group Participants that developed that Draft Deliverable or Approved Deliverable agree to grant the copyright rights necessary to make those submissions. </li>
-    </ul> 
-  <h3>Withdrawal and Termination.</h3>
-    <ul>
-      <li>Term. The term of this agreement is 1 year from the date this agreement is countersigned by the Incubator Members. </li>
-      <li>Withdrawal or Termination. A Steering Member, Associate, or Contributor may withdraw from a Working Group or the Incubator at any time by notifying the Facilitator in writing, and that withdrawal is effective upon receipt of the notice. Upon a Supermajority Vote of all Steering Members (calculated without the vote of the Steering Member in question), a Steering Member, Associate, or Contributor may be terminated from the Incubator or withdrawn from a Working Group.</li>
-      <li>Incubator Termination. Upon a Supermajority Vote of the Steering Members, the Incubator will cease and terminate as of the effective date designated in that vote. The Facilitator will coordinate with the Center to facilitate that termination.</li>
-      <li>Effect of Withdrawal or Termination. Upon a Steering Member’s, Associate’s, or Contributor’s written withdrawal from a Working Group or upon the termination of its Incubator membership, all existing commitments, and obligations with respect to the Incubator or Working Group, as the case may be, up to the effective date of withdrawal or termination will remain in effect, but no new obligations will be incurred. Notwithstanding the foregoing, the license granted in Section 6 shall survive any withdrawal, termination, or expiration of this Incubator Agreement. </li>
-    </ul>
-  <h3>Representations, Warranties and Disclaimers.</h3>
-  <p>Steering Members, Associates, Contributors, and the Center represent and warrant that they are legally entitled to grant the rights and promises set forth in this agreement. IN ALL OTHER RESPECTS THE CONTRIBUTIONS ARE PROVIDED "AS IS." The entire risk as to implementing or otherwise using a Draft Deliverable or Approved Deliverable is assumed by the implementer and user. Except as stated herein, Steering Members, Associates, and Contributors expressly disclaims any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the material. IN NO EVENT WILL THE CENTER, ANY STEERING MEMBER, ASSOCIATE, OR CONTRIBUTOR BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THIS AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER MEMBER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
-  <h3>Use of Name or Marks.</h3>
-    <ul>
-      <li>Participant Name or Marks. The Incubator may not use any Steering Member’s or Associate’s logo, trademark, or service mark on any Incubator material without that party’s express prior written authorization.</li>
-      <li>Incubator Identification. Incubators may identify themselves as a Center for Supply Chain Studies Incubator. The Incubator must use the formal Incubator name in all legal transactions.</li>
-      <li>Center Listing. As an Incubator, the Center may not publicly identify the Incubator, including its member list, as a Center for Supply Chain Studies Incubator, unless the Steering Committee otherwise notifies the Center Facilitator in writing.</li>
+          <h3>OCI Architecture Contribution and Change Process</h3>
+              <p>The <strong>OCI Steering Committee</strong> has approved authors (Document Authors, Code Authors, etc.) within the <strong>OCI Policy and Architecture Committee</strong> who are responsible for managing <a>Contributions</a> and communicating with <a>contributors</a>. The Policy and Architecture Committee has a process to vet document and code changes resulting from <a>Contributions</a> against requirements provided by industry trading partners and other stakeholders.</p> 
+                <figure id="figure">
+                  <img src="assets/oci-contribution-process.svg" alt="OCI Architecture Contribution and Change Process" style="width: 100%; height: 100%;" />
+                  <figcaption>OCI Architecture Contribution and Change Process</figcaption>
+                </figure>
+              <ol>
+                <li>A <a>Contribution</a> or Change Request SHALL be submitted via the dedicated communication paths provided by OCI, namely the <a href="https://www.oc-i.org/contact">OCI website</a> or <a href="https://github.com/Open-Credentialing-Initiative">OCI GitHub</a>.</li>
+                <li>The Policy and Architecture (P&A) Committee performs a detailed assessment and impact analysis to derive an initial decision about the validity and extent of the proposal. Where further consultations with other organizations or experts are required, these will be carried out as appropriate. The Policy and Architecture Committee also keeps the Steering Committee informed regularly about received change requests and their evaluation.</li>       
+                <li>If the proposal is <b>not</b> deemed worthy of any further consideration, the Policy and Architecture Committee will inform the <a>Contributor</a>.</li>
+                <li>Should the Policy and Architecture Committee approve the change request and it does <b>not</b> constitute a substantive change to existing OCI rules or requirements, it will be scheduled for implementation. The result will be published and the <a>Contributor</a> informed.</li>
+                <li>Should the Policy and Architecture Committee approve the change request and it constitutes a <b>substantive change</b> to existing OCI rules or requirements, it will be proposed to the Steering Committee.</li>
+                <li>The Steering Committee assesses whether further consultations with industry professionals are needed to ensure alignment with industry needs.</li>
+                <li>If the Steering Committee does <b>not</b> see any need for further enquiry with industry professionals, the proposal will not be taken to an <a>Industry Alignment Session</a>. The Steering Committee will decide whether to approve the Request. If it is rejected, the <a>Contributor</a> will be informed by the Steering Committee. If the change request is approved, it will be scheduled for implementation. The result will be published and the <a>Contributor</a> informed.</li>
+                <li>If the Steering Committee deems it necessary to enquire with industry professionals, the change request will be proposed at the next possible <a>Industry Alignment Session</a>. The <a>Contributor</a> may participate at this open meeting. If the group present at that meeting deems it necessary to perform further detailed impact analysis on behalf of the industry, a special <a>Industry Alignment Session</a> will be scheduled to focus on the change request. The <a>Contributor</a> may also participate at this discussion.</li>
+                <li>If the change request obtains <b>final approval</b> by the Steering Committee after the held <a>Industry Alignment Session</a>, it will be scheduled for implementation. The result will be published and the <a>Contributor</a> informed.</li>
+                <li>If the change request does <b>not</b> obtain final approval after the held <a>Industry Alignment Session</a>, it will be rejected and the <a>Contributor</a> informed by the Steering Committee.</li>
+                <li>The <a>Contributor</a> may then launch the <em>OCI Architecture Appeal Process</em> described in the following Section to justify their re-submission of the proposal for further consideration.</li>
+              </ol>  
+                <p> Changes to OCI documents and code are bundled together into <strong>interoperability profiles</strong> that define the document and code sets that must be implemented together to maintain interoperability across the industry. OCI, through the Policy and Architecture Committee and approved by the Steering Committee, will maintain an industry implementation roadmap including sunrise and sunset dates for interoperability profile versions.
+              </p>     
+    
+          <h3>OCI Architecture Appeal Process</h3>
+              <p>It may be the case that a particular <a>Contribution</a> is rejected by the OCI committees. OCI has instituted this appeal process to allow the <a>contributor</a> to defend their case.</p> 
+              <figure id="figure">
+                <img src="assets/oci-appeal-process.svg" alt="OCI Architecture Appeal Process" style="width: 100%; height: 100%;" />
+                <figcaption>OCI Architecture Appeal Process</figcaption>
+              </figure>
+              <ol>  
+                <li>The <a>Contributor</a> SHALL use the form available on the <a href="https://www.oc-i.org/contact">OCI website</a> to launch the <em>OCI Architecture Appeal Process</em>. This will require a justification for the re-submission.</li>
+                <li>The Policy & Architecture (P&A) and Steering Committees will evaluate the justification for the appeal, including any newly provided information. If the justification raises arguments that convince <b>both</b> committees to re-consider the proposal, they will engage in activities to consider the new information and determine how to handle the proposal. This may involve the examination of modifications or alternatives.</li>
+                <li>The Steering Committee assesses whether further consultations with industry professionals are needed to ensure alignment with industry needs.</li>
+                <li>If the Steering Committee does <b>not</b> see any need for further enquiry with industry professionals, the proposal will not be taken to an <a>Industry Alignment Session</a>. The Steering Committee will decide whether to approve the appeal. If it is rejected, the <a>Contributor</a> will be informed by the Steering Committee. If the appeal is approved, it will be subjected to the <em>OCI Architecture Contribution and Change Process</em> described in the previous Section.</li>
+                <li>If the Steering Committee deems it necessary to enquire with industry professionals, the appeal will be proposed at the next possible <a>Industry Alignment Session</a>. The <a>Contributor</a> may participate at this open meeting. If the group present at that meeting deems it necessary to perform further detailed impact analysis on behalf of the industry, a special <a>Industry Alignment Session</a> will be scheduled to focus on the appeal. The <a>Contributor</a> may also participate at this discussion.</li>
+                <li>If the appeal obtains <b>final approval</b> by the Steering Committee after the held <a>Industry Alignment Session</a>, it will be subjected to the <em>OCI Architecture Contribution and Change Process</em> described in the previous Section.</li>
+                <li>If the appeal does <b>not</b> obtain final approval after the held <a>Industry Alignment Session</a>, it will be rejected and the <a>Contributor</a> informed by the Steering Committee.</li>
+                <li>The <a>Contributor</a> <em>MAY NOT</em> open another appeal process on the same proposal. Any such attempt will be disregarded.</li>
+                <li>If the appeal process reveals suggestions for improvement that the <a>Contributor</a> is willing to accept, they are encouraged to submit an amended proposal by starting a new request for change process.</li>
+              </ol>
+        
+          <h3>Submissions to Standards Bodies</h3> 
+              <p>No OCI <a>Deliverable</a> may be submitted to a standards development organization without approval by the Steering Members. Upon approval by the Steering Members, the Facilitator will coordinate the submission of the applicable <a>Deliverable</a> to a standards development organization with Center for Supply Chain Studies. Working Group Participants that developed that Deliverable agree to grant the copyright rights necessary to make those submissions. </p>
+  </section>
+  <section>
+    <h2>Withdrawal and Termination</h2>
+      <ul>
+        <li>Withdrawal or Termination. An OCI Member may withdraw from a Working Group or the Incubator at any time by notifying the Facilitator in writing, and that withdrawal is effective upon receipt of the notice. Upon a <a>Supermajority Vote</a> of all Steering Members (calculated without the vote of the Steering Member in question), a OCI Member may be terminated from the Incubator or withdrawn from a Working Group.</li>
+        <li>Incubator Termination. Upon a <a>Supermajority Vote</a> of the Steering Members, the <a>Incubator</a> will cease and terminate as of the effective date designated in that vote. The Facilitator will coordinate with the Center to facilitate that termination.</li>
+        <li>Effect of Withdrawal or Termination. Upon an OCI Member’s written withdrawal from a Working Group or upon the termination of its Incubator membership, all existing commitments, and obligations with respect to the Incubator or Working Group, as the case may be, up to the effective date of withdrawal or termination will remain in effect, but no new obligations will be incurred. Notwithstanding the foregoing, the license granted in Section 6 shall survive any withdrawal, termination, or expiration of this Incubator Agreement. </li>
       </ul>
-  <h3>Non-Confidential, Restricted Disclosure.</h3>
-  <p>Steering Members, Associates, and Contributors may not make any public disclosures of information disclosed in connection with the Incubator and any Working Group activity, including but not limited to meetings, Contributions, and submissions without the Approval of the Steering Members or Working Group, as applicable, authorizing that disclosure. Any distributions of technical information to third parties must include a notice materially similar to the following: 
-    <q> THESE MATERIALS ARE PROVIDED “AS IS.” The owners and contributors expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the materials. The entire risk as to implementing or otherwise using the materials is assumed by the implementer and user. IN NO EVENT WILL THE OWNERS AND CONTRIBUTORS BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THIS DELIVERABLE OR ITS GOVERNING AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER MEMBER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-    </q></p>
-  <h3>Antitrust.</h3>
-      <p>The Steering Members, Associates, and Contributors acknowledge that they may compete with one another in various lines of business and that it is therefore imperative that they and their respective representatives act in a manner that does not violate any applicable antitrust laws and regulations. Each Steering Member and Associate may have similar agreements with others. Each Steering Member and Associate may design, develop, manufacture, acquire or market competitive deliverables, products, and services, and conduct its business, in whatever way it chooses. No Steering Member or Associate is obligated to announce or market any products or services. Without limiting the generality of the foregoing, the Steering Members, Associates, and Contributors agree not to have any discussion relating to any product pricing, methods or channels of product distribution, division of markets, allocation of customers or any other topic that should not be discussed among competitors.</p>
-  <h3>New Versions of Agreement. </h3>
-      <p>The Center for Supply Chain Studies may develop new versions of the Incubator Charter and Working Group Charter, which the Steering Committee may adopt to supersede the current Incubator Charter and Working Group Charter. The new documents will become effective 30 days from the date of Steering Member Approval. </p>
-  <h3>Choice of Law/Venue. </h3>
-      <p>This agreement, and the rights of the parties hereunder, shall be construed pursuant to the laws of the State of Delaware (without regard to conflict of laws principles). The courts of Delaware, U.S.A. shall have jurisdiction and the parties waive any other jurisdiction. </p>
-    </section>
+  </section>
+  <section>
+    <h2>Use of Name or Marks</h2>
+      <ul>
+        <li>Participant Name or Marks. The <a>Incubator</a> may not use any Steering Member’s or Associate’s logo, trademark, or service mark on any <a>Incubator</a> material without that party’s express prior written authorization.</li>
+        <li>Incubator Identification. Incubators may identify themselves as a Center for Supply Chain Studies Incubator. The <a>Incubator</a> must use the formal Incubator name in all legal transactions.</li>
+        <li>Center Listing. The Center may not publicly identify the <a>Incubator</a>, including its member list, as a Center for Supply Chain Studies Incubator, unless the Steering Committee otherwise notifies the Center Facilitator in writing.</li>
+        </ul>
+  </section>
+  <section>    
+    <h2>Non-Confidential, Restricted Disclosure</h2>
+      <p><a>OCI Members</a> may not make any public disclosures of information disclosed in connection with the <a>Incubator</a> and any Working Group activity, including but not limited to meetings, <a>Contributions</a>, and submissions without the Approval of the Steering Members or Working Group, as applicable, authorizing that disclosure. Any distributions of technical information to third parties must include a notice materially similar to the following: 
+      <q> THESE MATERIALS ARE PROVIDED “AS IS.” The owners and contributors expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the materials. The entire risk as to implementing or otherwise using the materials is assumed by the implementer and user. IN NO EVENT WILL THE OWNERS AND CONTRIBUTORS BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THIS DELIVERABLE OR ITS GOVERNING AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER MEMBER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+      </q></p>
+  </section>
+  <section>
+     <h2>Antitrust</h2>
+         <p><a>OCI Members</a> acknowledge that they may compete with one another in various lines of business and that it is therefore imperative that they and their respective representatives act in a manner that does not violate any applicable antitrust laws and regulations. Each Steering Member and Associate may have similar agreements with others. Each Steering Member and Associate may design, develop, manufacture, acquire or market competitive deliverables, products, and services, and conduct its business, in whatever way it chooses. No Steering Member or Associate is obligated to announce or market any products or services. Without limiting the generality of the foregoing, the OCI Members agree not to have any discussion relating to any product pricing, methods or channels of product distribution, division of markets, allocation of customers or any other topic that should not be discussed among competitors.</p>
+  </section>
 </body>
 
 </html>
