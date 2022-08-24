@@ -13,7 +13,7 @@
   <meta http-equiv=" Content-Type" content="text/html;charset=utf-8" />
 
   <title>OCI Governance</title>
-  <h2 id="subtitle">v2.0.0</h2>
+  <h2 id="subtitle">v2.1.0</h2>
   
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
   <script type="text/javascript" class="remove">
@@ -48,7 +48,7 @@
           companyURL: 'https://www.tracelink.com/',
         },
       ],
-      github: "https://open-credentialing-initiative.github.io/OCI-Governance/",
+      github: "https://github.com/Open-Credentialing-Initiative/OCI-Governance",
       logos: [
         {
           src: "https://avatars.githubusercontent.com/u/79323216?s=200&v=4",
@@ -197,6 +197,26 @@
                     <li>Working Group Chair. Each Working Group will designate at least one chair for that Working Group. A Working Group may select a new chair upon approval of the <a>Working Group Participants</a>.</li>
                     <li>Working Group Requirements. Each Working Group must be comprised of at least 2 <a>Working Group Participants</a>. No Working Group Participant will be permitted to participate in a Working Group without first joining the Working Group.</li>
                   </ul> 
+              <h3>Trusted Issuer Registry</h3>
+                  <ul>
+                    <li>The OCI is responsible for maintaining and updating the <a href="https://github.com/Open-Credentialing-Initiative/trusted-issuer-registry">Trusted Issuer Registry</a></li>
+                    <li>The <a href="https://github.com/Open-Credentialing-Initiative/trusted-issuer-registry">Trusted Issuer Registry</a> smart contract leverages a lightweight voting system before changes can be enforced to it. Each participant may vote on changes with either <strong>Yea</strong> to indicate a positive vote or <strong>Nay</strong> to indicate a negative vote.</li>
+                    <li>Voting occurs in the decentralized application the smart contract repository provides. See <a href="https://github.com/Open-Credentialing-Initiative/trusted-issuer-registry#frontend">Trusted Issuer Registry Voting</a> for reference.</li>
+                    <li>The inital governance parameters of the smart contract are as follows:</li>
+                      <ul>
+                        <li>Add a single statekeeper: <strong>60%</strong> majority</li>
+                        <li>Remove a single statekeeper: <strong>60%</strong> majority</li>
+                        <li>Change a governance parameter: <strong>80%</strong> majority</li>
+                        <li>Retire the smart contract: <strong>80%</strong> majority</li>
+                      </ul>
+                    <li>The OCI <strong>requires</strong> to leverage a hardware wallet for storing and managing the ethereum wallet which acts as a statekeeper in the contract. If a new statekeeper is added to the contract by a majority vote, it has to be ensured that the entity provides an address which is hardware managed.</li>
+                    <li>The inital statekeepers of the contract are the following addresses:</li>
+                      <ul>
+                        <li><strong>Founding Member |</strong> Company1 - EXAMPLE 0x19d5C87c8eAb67c49e81Bf9C4ea821FB9DFcA6e3</li>
+                        <li><strong>Founding Member |</strong> Company2 - EXAMPLE 0x19d5C87c8eAb67c49e81Bf9C4ea821FB9DFcA6e3</li>
+                        <li><strong>Founding Member |</strong> Company3 - EXAMPLE 0x19d5C87c8eAb67c49e81Bf9C4ea821FB9DFcA6e3</li>
+                      </ul>
+                  </ul>
   </section>
   <!-- Contribution & Appeal Process -->
   <section>
