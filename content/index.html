@@ -13,7 +13,7 @@
   <meta http-equiv=" Content-Type" content="text/html;charset=utf-8" />
 
   <title>OCI Governance</title>
-  <h2 id="subtitle">v2.0.1</h2>
+  <h2 id="subtitle">v3.0.0</h2>
   
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
   <script type="text/javascript" class="remove">
@@ -46,6 +46,18 @@
           url: 'https://www.linkedin.com/in/elizabethwaldorf/',
           company: 'TraceLink',
           companyURL: 'https://www.tracelink.com/',
+        },
+        {
+          name: 'Georg Jürgens',
+          url: 'https://www.linkedin.com/in/georg-j%C3%BCrgens/',
+          company: 'Spherity',
+          companyURL: 'https://spherity.com/',
+        },
+        {
+          name: 'Lauritz Leifermann',
+          url: 'https://twitter.com/LLeifermann',
+          company: 'Spherity',
+          companyURL: 'https://spherity.com/',
         },
       ],
       github: "https://github.com/Open-Credentialing-Initiative/OCI-Governance",
@@ -104,7 +116,7 @@
         This document lays out the terms and conditions of OCI's governance.
       </p>
   </section>
-    <!-- Content -->
+  <!-- Content -->
   <section>
       <h2>Purpose</h2>
           <p>The Open Credentialing Initivative (OCI) was started as an Incubator of the Center for Supply Chain Studies. 
@@ -127,6 +139,7 @@
           <ul>
             <li><dfn>Deliverable</dfn> means all versions of the material developed by a Working Group for the purpose of creating, commenting on, revising, updating, modifying, or adding to any document that is to be considered for inclusion in OCI publications or releases.</li>
             <li><dfn>DSCSA</dfn> (Drug Supply Chain Security Act) refers to an act of the U.S. Congress. Find more information on the <a href="https://www.fda.gov/drugs/drug-supply-chain-integrity/drug-supply-chain-security-act-dscsa">FDA website</a>.</li>       
+            <li>Ethereum <dfn>smart contract</dfn> refers to one or more self-contained programs run on the Ethereum blockchain that automatically execute when predetermined conditions are met.</li>
             <li><dfn>Incubator</dfn> means the name of the Incubator that was established under the original Incubator Charter as a Center for Supply Chain Studies Incubator. Here this is the Open Credentialing Initiative (OCI).</li>
             <li><dfn>Incubator Charter</dfn> means the agreement that establishes the Incubator under Center for Supply Chain Studies that this Incubator operates under.</li>
             <li><dfn>Industry Alignment Session</dfn> refers to an open meeting intended to involve OCI members as well as representatives from organizations that are not directly associated with OCI but who have an interest in the OCI architecture and processes. Participants may be pharmaceutical industry business experts, compliance specialists, technical experts, or other relevant pharmaceutical industry professionals.</li>
@@ -134,6 +147,9 @@
                       An Affiliate is an entity that directly or indirectly controls, is controlled by, or is under common control of an entity. 
                       Control means direct or indirect control of more than 50% of the voting stock or decision-making authority.</li>
             <li><dfn>Supermajority Vote</dfn> means an affirmative vote of no less than 3/4 of Steering Members or Working Group Participants, as applicable, that have attended/participated in at least 50% of the last 4 meetings of the group conducting the vote, where each Steering Member or Working Group Participant will receive only 1 vote regardless of how many individuals from that Steering Member participate. To ensure the group is capable of making decisions, the voting requirement for attendance/participation of at least 50% of the last 4 meetings shall be waived if there have not yet been 4 meetings.</li>
+            <li><dfn>Trusted Issuer Registry</dfn> refers to a <a href="https://github.com/Open-Credentialing-Initiative/trusted-issuer-registry">public register</a> of OCI-approved credential issuers in compliance with the <a href="https://open-credentialing-initiative.github.io/Credential-Issuer-Conformance-Criteria/">OCI Credential Issuer Conformance Criteria</a>.</li>
+            <li>Trusted Issuer Registry <dfn>Statekeeper</dfn> means a person or entity with the technical capability and permission to change the <a>Trusted Issuer Registry</a>.</li>
+            <li>Trusted Issuer Registry <dfn>voting</dfn> refers to the signing of a <a>smart contract</a> transaction to amend <a>Trusted Issuer Registry</a> parameters. This way the <a>Statekeepers</a> enact the decision of the Steering Committee with the <a>smart contract</a>.</li>
             <li><dfn>Working Group</dfn> means a working group established under this Incubator to develop Deliverables within the Scope, i.e. a description of the deliverables that a given Working Group will develop. Each Working Group must have a Scope.</li>
             <li><dfn>Working Group Participant</dfn> means an OCI Member who has joined a Working Group by indicating either in the Membership Agreement or subsequently in writing to the Facilitator that they have joined a Working Group.</li>
           </ul>  
@@ -195,7 +211,65 @@
                     <li>Working Group Requirements. Each Working Group must be comprised of at least 2 <a>Working Group Participants</a>. No Working Group Participant will be permitted to participate in a Working Group without first joining the Working Group.</li>
                   </ul> 
   </section>
-  <!-- Contribution & Appeal Process -->
+  <!-- Trusted Issuer Registry -->
+  <section>
+    <h2>Trusted Issuer Registry Governance</h2>
+      <h3>Overview</h3>
+        <p>OCI maintains a <a>Trusted Issuer Registry</a>. To this end, it employs an Ethereum <a>smart contract</a> managed by so-called <a>Statekeepers</a>. They execute the Steering Committee’s decisions concerning the Trusted Issuer Registry and report to the Steering Committee.</p>
+        <figure id="figure">
+          <img src="assets/OCI-issuer-registry-governance.svg" alt="OCI trusted issuer registry governance overview" style="width: 50%; height: 50%;" />
+          <figcaption>OCI Trusted Issuer Registry Governance</figcaption>
+        </figure>
+      <h3>Steering Committee Oversight</h3>
+          <p>
+            The Steering Committee SHALL be accountable and responsible for the <a>Trusted Issuer Registry</a> management. The voting on decisions concerning the Trusted Issuer Registry SHALL follow OCI’s Governance section <a href="#decision-making">Decision Making</a>.<br> <br> 
+            Following a decision, the Steering Committee SHALL request from the Trusted Issuer Registry <a>Statekeepers</a> to update the Trusted Issuer Registry.<br> <br>
+            The initial Statekeepers SHALL be assigned by the Steering Committee following the afore-mentioned OCI decision-making process. Any subsequent changes to the initial list of Statekeepers SHALL follow the process described in this chapter. <br> <br>
+          </p>
+      <h3>Trusted Issuer Registry Statekeeper</h3>
+          <p>
+            Statekeepers are OCI member organizations responsible for maintaining and updating the <a>Trusted Issuer Registry</a> on behalf of the Steering Committee. Statekeepers SHALL amend the Trusted Issuer Registry only upon approval by the Steering Committee. Statekeepers report to the Steering Committee.<br><br>
+            Each Statekeeper SHALL have the permission and technical capability to sign Trusted Issuer Registry transactions. By signing, the Statekeeper exerts their <a>voting</a> power. Only when a transaction is signed in accordance with the respective governance parameters, will the <a>smart contract</a> be updated.<br><br>
+            Each Statekeeper SHALL procure and employ a hardware wallet for storing and managing the Ethereum wallet that facilitates the Trusted Issuer Registry management. <br><br>
+            The executing Statekeeper MAY be a single assigned individual within the OCI member organization or represented by a multi-signature wallet. The latter is effectively a shared account, which can be managed by multiple individuals within the organization. Each Statekeeper has only 1 organizational vote regardless of the number of representing individuals.<br><br>
+          </p>
+      <h3>Trusted Issuer Registry Parameters</h3>
+          <p>The scope of registry management and corresponding <a>voting</a> thresholds are as follows:</p>
+            <table class="simple">
+              <tr>
+                <th><b>Registry Management</b></th>
+                <th><b>Voting</b></th>
+              </tr>
+              <tr>
+                <td>Add a new Statekeeper to the Trusted Issuer Registry smart contract</td>
+                <td>at least 60% of all Statekeepers SHALL vote in favor</td>
+              </tr>
+              <tr>
+                <td>Remove a Statekeeper from the Trusted Issuer Registry smart contract</td>
+                <td>at least 60% of all Statekeepers SHALL vote in favor</td>
+              </tr>
+              <tr>
+                <td>Add a Trusted Issuer to the Trusted Issuer Registry (see Note 1)</td>
+                <td>at least 60% of all Statekeepers SHALL vote in favor</td>
+              </tr>
+              <tr>
+                <td>Remove a Trusted Issuer from the Trusted Issuer Registry (see Note 1)</td>
+                <td>at least 60% of all Statekeepers SHALL vote in favor</td>
+              </tr>
+              <tr>
+                <td>Change a governance parameter concerning the Trusted Issuer Registry</td>
+                <td>at least 80% of all Statekeepers SHALL vote in favor</td>
+              </tr>
+              <tr>
+                <td>Retire the Trusted Issuer Registry smart contract</td>
+                <td>at least 80% of all Statekeepers SHALL vote in favor</td>
+              </tr>
+            </table>
+            <p><b>Note 1</b><br>
+              The <a>Trusted Issuer Registry</a> captures Credential Issuers in the form of their unique identifier (DID). A Credential Issuer MAY be associated with more than one DID. However, a single DID SHALL only ever be associated with one Credential Issuer. As far as Trusted Issuer Registry management is concerned, each DID is regarded as a single Credential Issuer. Thus, the addition or removal of each DID SHALL be subject to approval by the Steering Committee.
+            </p>
+  </section>
+  <!-- Contribution & Appeal Process -->  
   <section>
     <h2>Contributions</h2>
       <p>Any <a>OCI Member</a> or external party makes <a>Contributions</a> to OCI in agreement with the Apache License, Version 2.0 (the “License”). All published OCI material is licensed under this License; OCI material may not be used except in compliance with the License. A copy of the License may be obtained at <a href="https://www.apache.org/licenses/LICENSE-2.0.html">apache.org</a>. Unless required by applicable law or agreed to in writing, OCI-published material distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
