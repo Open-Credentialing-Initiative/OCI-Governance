@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T12:32:47.879Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="9d7x6bDCa19kLxr_4VI5" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T12:34:45.286Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="z56i0PwXXYaH5a6kWAxC" version="24.5.1" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="954" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,16 +13,16 @@
         <mxCell id="bPaxlttk6oUTb16X_v8A-5" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Reference Test Set-up and Guides&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;spacing=4;spacingRight=9;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
           <mxGeometry x="83" y="30" width="114" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bPaxlttk6oUTb16X_v8A-12" value="Publish&lt;div&gt;Performance Data&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;arcSize=8;strokeWidth=2;spacingLeft=0;spacingTop=0;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
+        <mxCell id="bPaxlttk6oUTb16X_v8A-12" value="Publish&lt;div&gt;Performance Data&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeWidth=2;spacingLeft=0;spacingTop=0;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
           <mxGeometry x="590" y="30" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-21" value="Testing Participant" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-21" value="Test Participant" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
           <mxGeometry x="20" y="120" width="740" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-26" value="Create Test Data" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-26" value="Create Test Data" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
           <mxGeometry x="40" y="30" width="80" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bPaxlttk6oUTb16X_v8A-10" value="Performance Data" style="whiteSpace=wrap;html=1;rounded=0;arcSize=8;strokeWidth=2;spacingLeft=0;spacingTop=0;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
+        <mxCell id="bPaxlttk6oUTb16X_v8A-10" value="Performance Data" style="whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeWidth=2;spacingLeft=0;spacingTop=0;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
           <mxGeometry x="590" y="30" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="dNxyNK7c78bLwvsdeMH5-22" value="K6 Testing Tool" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
@@ -31,19 +31,19 @@
         <mxCell id="bPaxlttk6oUTb16X_v8A-2" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Raw&lt;/font&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Performance&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Data&lt;/font&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;align=center;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-22" source="dNxyNK7c78bLwvsdeMH5-34" target="bPaxlttk6oUTb16X_v8A-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-34" value="Perform&lt;div&gt;Test Run&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-22" vertex="1">
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-34" value="Perform&lt;div&gt;Test Run&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-22" vertex="1">
           <mxGeometry x="100" y="40" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bPaxlttk6oUTb16X_v8A-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-22" source="bPaxlttk6oUTb16X_v8A-1" target="bPaxlttk6oUTb16X_v8A-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bPaxlttk6oUTb16X_v8A-1" value="Anonymize Performance Data" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-22">
+        <mxCell id="bPaxlttk6oUTb16X_v8A-1" value="Anonymize Performance Data" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-22">
           <mxGeometry x="289" y="40" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bPaxlttk6oUTb16X_v8A-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-22" source="bPaxlttk6oUTb16X_v8A-3" target="bPaxlttk6oUTb16X_v8A-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bPaxlttk6oUTb16X_v8A-3" value="Calculate Performance Data" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=0;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-22">
+        <mxCell id="bPaxlttk6oUTb16X_v8A-3" value="Calculate Performance Data" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-22">
           <mxGeometry x="445" y="40" width="90" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bPaxlttk6oUTb16X_v8A-8" value="Calculated Performance Data" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;spacingLeft=12;spacingTop=9;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-22">
