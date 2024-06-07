@@ -269,6 +269,47 @@
               The <a>Trusted Issuer Registry</a> captures Credential Issuers in the form of their unique identifier (DID). A Credential Issuer MAY be associated with more than one DID. However, a single DID SHALL only ever be associated with one Credential Issuer. As far as Trusted Issuer Registry management is concerned, each DID is regarded as a single Credential Issuer. Thus, the addition or removal of each DID SHALL be subject to approval by the Steering Committee.
             </p>
   </section>
+ <!-- Performance Testing -->  
+  <section>
+      <h2>Reference Set-up for Performance Testing</h2>
+          <h3>Purpose</h3>
+            <p>To enable standardized performance testing of service providers’ systems that yields comparable results, OCI provides an openly accessible test set-up intended for:</p>
+              <ul>
+                <li>Checking whether the technical implementations perform within the expectations stated in the current conformance criteria;</li>
+                <li>Understanding the performance impact of (proposed) design changes in OCI’s specifications;</li>
+                <li>Confirming the performance of incoming new service providers.</li>
+              </ul>
+            <p>OCI encourages any interested party to vet and comment on any of the open-sourced material. </p>
+          <h3>Scope</h3>
+            <p>While OCI makes the reference material for performance testing publicly available and encourages service providers to use it, OCI does not intend to coordinate test runs unless tasked to do so. Testing efforts are assumed to be driven and managed by service providers.</p>
+          <h3>Data Ownership</h3>
+            <p>Any service provider who uses OCI’s reference material to generate test data remains the owner of that data. OCI encourages service providers to submit data to OCI for publication in its GitHub repository and processing by OCI. The following terms apply to such shared data (see also Figure 1 below).</p>
+            <figure id="figure">
+                <img src="" alt="OCI Reference Set-up for Performance Testing" style="width: 100%; height: 100%;" />
+                <figcaption>Illustration of the Current Process</figcaption>
+            </figure>
+          <h3>Boundaries of Transparency</h3>
+            <p>OCI will replace company names with anonymous OCI identifiers before processing and publishing any shared data. OCI will maintain a confidential file containing mapping actual company names with OCI identifiers. Access to this file will be limited to the OCI admin(s) overseeing the performance test. <br><br>
+              For any coherent test runs, OCI will maintain the same public OCI identifier for the same solution provider across all test conditions so that data can be directly compared. The OCI identifier will be changed haphazardly between test runs that do not belong together, so a correlation of individual service provider performance across time is impossible. Each service provider may know their own OCI identifier.<br><br>
+              As part of the data anonymization, the solution provider is expected to remove any details from the raw data considered confidential by the service provider before sharing any data with OCI. For each test flight, the essential data required for analysis are:</p>
+              <ul>
+                <li>Requester Digital Wallet Provider</li>
+                <li>Requester VRS Provider</li>
+                <li>Responder Digital Wallet Provider</li>
+                <li>Responder VRS Provider</li>
+                <li>Timestamp & corrUUID of all VP Generate request initiations</li>
+                <li>Timestamp & corrUUID of all VP Generate response receipts</li>
+                <li>Timestamp of all VRS request initiations</li>
+                <li>Timestamp of all VRS response receipts</li>
+                <li>Timestamp & corrUUID of all VP Verify request initiations</li>
+                <li>Timestamp & corrUUID of all VP Verify response receipts</li>
+              </ul>
+            <p>Service providers may retract consent for publication of their raw or OCI-processed data.</p>
+          <h3>Data Processing</h3>
+            <p>Any service provider who makes data available to OCI for publication agrees that OCI processes that data in line with the reference guide for data processing, which itself is publicly available in OCI’s dedicated GitHub repository.<br><br>
+              In general, OCI’s data processing involves basic mathematical calculations without interpretation in any applied industry context and without concluding recommendations to solution providers. OCI may evaluate calculated performance results with reference to its own approved Conformance Criteria.<br><br>              
+              Processed data will be published for scrutiny by independent external parties. </p>
+  </section>
   <!-- Contribution & Appeal Process -->  
   <section>
     <h2>Contributions</h2>
