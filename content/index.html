@@ -13,7 +13,7 @@
   <meta http-equiv=" Content-Type" content="text/html;charset=utf-8" />
 
   <title>OCI Governance</title>
-  <h2 id="subtitle">v3.2.0</h2>
+  <h2 id="subtitle">v3.2.1</h2>
   
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
   <script type="text/javascript" class="remove">
@@ -21,7 +21,7 @@
       specStatus: 'base',
       latestVersion: "https://open-credentialing-initiative.github.io/OCI-Governance/",
       shortName: 'OCI Governance',
-      publishDate: "07 June 2024",
+      publishDate: "12 Dec 2024",
       license: 'w3c-software-doc',
       logos: [],
       lint: {
@@ -96,7 +96,7 @@
 </head>
 
 <body>
-  <p class="copyright">Copyright © 2022 Named editors. Contributors to the Open Credentialing Initiative.</p>
+  <p class="copyright">Copyright © 2024 Named editors. Contributors to the Open Credentialing Initiative.</p>
   <section>
       <h2>Status of this Document</h2>
       <p>
@@ -147,7 +147,7 @@
                       An Affiliate is an entity that directly or indirectly controls, is controlled by, or is under common control of an entity. 
                       Control means direct or indirect control of more than 50% of the voting stock or decision-making authority.</li>
             <li><dfn>Supermajority Vote</dfn> means an affirmative vote of no less than 3/4 of Steering Members or Working Group Participants, as applicable, that have attended/participated in at least 50% of the last 4 meetings of the group conducting the vote, where each Steering Member or Working Group Participant will receive only 1 vote regardless of how many individuals from that Steering Member participate. To ensure the group is capable of making decisions, the voting requirement for attendance/participation of at least 50% of the last 4 meetings shall be waived if there have not yet been 4 meetings.</li>
-            <li><dfn>Trusted Issuer Registry</dfn> refers to a <a href="https://github.com/Open-Credentialing-Initiative/trusted-issuer-registry">public register</a> of OCI-approved credential issuers in compliance with the <a href="https://open-credentialing-initiative.github.io/Credential-Issuer-Conformance-Criteria/">OCI Credential Issuer Conformance Criteria</a>.</li>
+            <li><dfn>Trusted Issuer Registry</dfn> refers to a <a href="https://github.com/Open-Credentialing-Initiative/trusted-issuer-registry">public register</a> of OCI-approved Credential Issuers in compliance with the <a href="https://open-credentialing-initiative.github.io/Credential-Issuer-Conformance-Criteria/">OCI Credential Issuer Conformance Criteria</a>.</li>
             <li>Trusted Issuer Registry <dfn>Statekeeper</dfn> means a person or entity with the technical capability and permission to change the <a>Trusted Issuer Registry</a>.</li>
             <li>Trusted Issuer Registry <dfn>voting</dfn> refers to the signing of a <a>smart contract</a> transaction to amend <a>Trusted Issuer Registry</a> parameters. This way the <a>Statekeepers</a> enact the decision of the Steering Committee with the <a>smart contract</a>.</li>
             <li><dfn>Working Group</dfn> means a working group established under this Incubator to develop Deliverables within the Scope, i.e. a description of the deliverables that a given Working Group will develop. Each Working Group must have a Scope.</li>
@@ -249,11 +249,11 @@
                 <td>at least 60% of all Statekeepers SHALL vote in favor</td>
               </tr>
               <tr>
-                <td>Add a Trusted Issuer to the Trusted Issuer Registry (see Note 1)</td>
+                <td>Add a Trusted Issuer to the Trusted Issuer Registry (see Note 1, 2)</td>
                 <td>at least 60% of all Statekeepers SHALL vote in favor</td>
               </tr>
               <tr>
-                <td>Remove a Trusted Issuer from the Trusted Issuer Registry (see Note 1)</td>
+                <td>Remove a Trusted Issuer from the Trusted Issuer Registry (see Note 1, 2)</td>
                 <td>at least 60% of all Statekeepers SHALL vote in favor</td>
               </tr>
               <tr>
@@ -266,7 +266,9 @@
               </tr>
             </table>
             <p><b>Note 1</b><br>
-              The <a>Trusted Issuer Registry</a> captures Credential Issuers in the form of their unique identifier (DID). A Credential Issuer MAY be associated with more than one DID. However, a single DID SHALL only ever be associated with one Credential Issuer. As far as Trusted Issuer Registry management is concerned, each DID is regarded as a single Credential Issuer. Thus, the addition or removal of each DID SHALL be subject to approval by the Steering Committee.
+                  The <a>Trusted Issuer Registry</a> captures Credential Issuers in the form of their unique identifier (DID). A Credential Issuer MAY be associated with more than one DID. However, a single DID SHALL only ever be associated with one Credential Issuer. As far as Trusted Issuer Registry management is concerned, each DID is regarded as a single Credential Issuer. Thus, the addition or removal of each DID SHALL be subject to approval by the Steering Committee.<br><br>
+               <b>Note 2</b><br>
+                  A Credential Issuer SHALL be assigned per credential type (refer to <a href="https://open-credentialing-initiative.github.io/Digital-Wallet-Conformance-Criteria/latest/#credential-serialization-schemas" target="_blank" rel="noopener noreferrer">Digital Wallet Conformance Criteria</a>) to delineate which credential types each Credential Issuer MAY manage. A Credential Issuer MAY be associated with more than one credential type.
             </p>
   </section>
  <!-- Performance Testing -->  
